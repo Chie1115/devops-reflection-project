@@ -8,8 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "echo 'Tests are temporarily bypassed due to a known issue with rolldown.' && exit 0"
+    "test": "vitest"
 
+    
   },
   "dependencies": {
     "react": "^19.1.1",
