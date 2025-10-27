@@ -23,9 +23,6 @@ jobs:
         working-directory: ./frontend
         run: npm ci
 
-      - name: Run simple test
-        run: echo "Running a simple placeholder test..." && exit 0
-
       - name: Build application
         working-directory: ./frontend
         run: npm run build
@@ -47,4 +44,5 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-reflection-app:latest
+          # ここを、Secretを使わずに、あなたのユーザー名で直書きします
+          tags: shikachie15/devops-reflection-app:latest
